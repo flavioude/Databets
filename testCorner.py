@@ -4,11 +4,11 @@ from pprint import pprint
 import csv
 from selenium.common.exceptions import NoSuchElementException
 
-
+# para a Premier League => view/1
 
 navegador = webdriver.Chrome()
 navegador.maximize_window()
-url = 'https://www.totalcorner.com/league/view/'
+url = 'https://www.totalcorner.com/league/view/1/page:'
 page = 1
 while page < 10:
     navegador.implicitly_wait(10)
